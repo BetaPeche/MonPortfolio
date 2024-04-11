@@ -1,0 +1,44 @@
+header {
+    max-width: 1320px;
+    width: calc(100% - 40px);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        @include font-pacifico(32px, 400, $black);
+    }
+    .active-link {
+        &::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            gap: 50px;
+            a {
+                @include font-work-sans(20px, 500, $black);
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #226d68;
+                    opacity: 0;
+                    transform: scale(0);
+                    transform-origin: center;
+                    transition: opacity 300ms, transform 300ms;
+                }
+                &:hover::after {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
