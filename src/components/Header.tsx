@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
 const Header = () => {
-    const [darkMode, setDarkMode] = useState(true)
+    const [darkMode, setDarkMode] = useState<boolean>(true)
     useEffect(() => {
         if (localStorage.getItem('theme') === 'dark') {
             setDarkMode(true)
@@ -13,19 +13,19 @@ const Header = () => {
         }
     }, [])
 
-    const isDark = () => {
+    const isDark: () => void = () => {
         document.body.classList.remove('light')
         document.body.classList.add('dark')
         localStorage.setItem('theme', 'dark')
     }
 
-    const isLight = () => {
+    const isLight: () => void = () => {
         document.body.classList.remove('dark')
         document.body.classList.add('light')
         localStorage.setItem('theme', 'light')
     }
 
-    const toggleDarkMode = () => {
+    const toggleDarkMode: () => void = () => {
         setDarkMode(!darkMode)
         if (darkMode) {
             isLight()
@@ -56,6 +56,7 @@ const Header = () => {
                 <button
                     className={darkMode ? 'dark' : 'light'}
                     onClick={toggleDarkMode}
+                    aria-label="Change le theme en dark ou light"
                 ></button>
             </nav>
         </header>
