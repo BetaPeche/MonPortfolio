@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     align-items: center;
     a {
-        @include font-pacifico(32px, 400, $black);
+        @include font-pacifico(32px, 400);
     }
     .active-link {
         &::after {
@@ -15,11 +15,14 @@ header {
         }
     }
     nav {
+        display: flex;
+        align-items: center;
+        gap: 25px;
         ul {
             display: flex;
             gap: 50px;
             a {
-                @include font-work-sans(20px, 500, $black);
+                @include font-work-sans(20px, 500);
                 position: relative;
                 &::after {
                     content: '';
@@ -38,6 +41,21 @@ header {
                     opacity: 1;
                     transform: scale(1);
                 }
+            }
+        }
+        button {
+            width: 70px;
+            height: 35px;
+            background-color: transparent;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
+            &.light {
+                background-image: url('./src/assets/img/toggleLight.webp');
+            }
+            &.dark {
+                background-image: url('./src/assets/img/toggleNight.webp');
             }
         }
     }

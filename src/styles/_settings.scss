@@ -3,10 +3,11 @@
 $font-1: 'Work Sans', sans-serif;
 $font-2: 'Pacifico', cursive;
 
-$color-1: #ff6060;
-// $color-2: salmon;
 $black: black;
 $white: white;
+
+$background-light: #fafbfc;
+$background-dark: #252b43;
 
 @mixin verticalCenter {
     display: flex;
@@ -14,17 +15,15 @@ $white: white;
     align-items: center;
 }
 
-@mixin font-work-sans($size, $bold, $color) {
+@mixin font-work-sans($size, $bold) {
     font-family: $font-1;
     font-size: $size;
-    color: $color;
     font-weight: $bold;
 }
 
-@mixin font-pacifico($size, $bold, $color) {
+@mixin font-pacifico($size, $bold) {
     font-family: $font-2;
     font-size: $size;
-    color: $color;
     font-weight: $bold;
 }
 
@@ -35,10 +34,21 @@ $white: white;
 }
 
 body {
-    background: $white;
+    background: $background-light;
+    color: $black;
     font-family: $font-1;
-    // @include verticalCenter;
+    a {
+        color: $black;
+    }
 }
+body.dark {
+    background: $background-dark;
+    color: $white;
+    a {
+        color: $white;
+    }
+}
+
 #root {
     display: flex;
     flex-direction: column;
