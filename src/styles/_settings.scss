@@ -37,13 +37,13 @@ body {
     background: $background-light;
     color: $black;
     font-family: $font-1;
-    transition: 300ms;
+    transition: background-color 300ms, color 300ms;
     a {
         color: $black;
     }
 }
 body.dark {
-    background: $background-dark;
+    background-color: $background-dark;
     color: $white;
     a {
         color: $white;
