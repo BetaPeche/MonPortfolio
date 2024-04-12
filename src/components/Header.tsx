@@ -4,12 +4,12 @@ import { NavLink, Link } from 'react-router-dom'
 const Header = () => {
     const [darkMode, setDarkMode] = useState(true)
     useEffect(() => {
-        if (localStorage.getItem('theme') === 'light') {
-            setDarkMode(false)
-            isLight()
-        } else {
+        if (localStorage.getItem('theme') === 'dark') {
             setDarkMode(true)
             isDark()
+        } else {
+            setDarkMode(false)
+            isLight()
         }
     }, [])
 
