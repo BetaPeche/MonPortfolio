@@ -1,38 +1,24 @@
-import { useEffect, useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import useThemeStore from '../themeStore'
+import { useEffect } from 'react'
 
 const Header = () => {
-    const [darkMode, setDarkMode] = useState<boolean>(true)
+    const { theme, toggleTheme } = useThemeStore()
+
+    const toggleDarkMode = () => {
+        toggleTheme()
+    }
+
     useEffect(() => {
-        if (localStorage.getItem('theme') === 'dark') {
-            setDarkMode(true)
-            isDark()
+        if (theme === 'dark') {
+            document.body.classList.remove('light')
+            document.body.classList.add('dark')
         } else {
-            setDarkMode(false)
-            isLight()
+            document.body.classList.remove('dark')
+            document.body.classList.add('light')
         }
-    }, [])
-
-    const isDark: () => void = () => {
-        document.body.classList.remove('light')
-        document.body.classList.add('dark')
-        localStorage.setItem('theme', 'dark')
-    }
-
-    const isLight: () => void = () => {
-        document.body.classList.remove('dark')
-        document.body.classList.add('light')
-        localStorage.setItem('theme', 'light')
-    }
-
-    const toggleDarkMode: () => void = () => {
-        setDarkMode(!darkMode)
-        if (darkMode) {
-            isLight()
-        } else {
-            isDark()
-        }
-    }
+        localStorage.setItem('theme', theme)
+    }, [theme])
 
     return (
         <header>
@@ -50,11 +36,18 @@ const Header = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink
+                            to="/about"
+                            className={(nav) =>
+                                nav.isActive ? 'active-link' : ''
+                            }
+                        >
+                            About
+                        </NavLink>
                     </li>
                 </ul>
                 <button
-                    className={darkMode ? 'dark' : 'light'}
+                    className={theme === 'dark' ? 'dark' : 'light'}
                     onClick={toggleDarkMode}
                     aria-label="Change le theme en dark ou light"
                 ></button>
