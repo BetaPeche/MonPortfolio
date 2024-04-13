@@ -8,8 +8,8 @@ const Banner = () => {
             <img
                 src={
                     theme === 'light'
-                        ? './img/ImagePortfolio.webp'
-                        : './img/ImagePortfolioDark.webp'
+                        ? './img/homepageBannerLight.webp'
+                        : './img/homepageBannerDark.webp'
                 }
                 alt=""
             />
