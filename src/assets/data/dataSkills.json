@@ -1,0 +1,43 @@
+[
+	{
+		"name": "HTML",
+		"image": "./img/html5.webp"
+	},
+	{
+		"name": "CSS",
+		"image": "./img/css3.webp"
+	},
+	{
+		"name": "JavaScript",
+		"image": "./img/js.webp"
+	},
+	{
+		"name": "Git",
+		"image": "./img/git.webp"
+	},
+	{
+		"name": "Figma",
+		"image": "./img/figma.webp"
+	},
+	{
+		"name": "SASS",
+		"image": "./img/sass.webp"
+	},
+	{
+		"name": "React",
+		"image": "./img/reactjs.webp"
+	},
+	{
+		"name": "Redux",
+		"image": "./img/redux.webp"
+	},
+	{
+		"name": "Github",
+		"image": "./img/github.webp",
+		"darkimage": "./img/githubdark.webp"
+	},
+	{
+		"name": "TypeScript",
+		"image": "./img/typescript.webp"
+	}
+]
