@@ -5,10 +5,6 @@ import { useEffect } from 'react'
 const Header = () => {
     const { theme, toggleTheme } = useThemeStore()
 
-    const toggleDarkMode = () => {
-        toggleTheme()
-    }
-
     useEffect(() => {
         if (theme === 'dark') {
             document.body.classList.remove('light')
@@ -48,7 +44,7 @@ const Header = () => {
                 </ul>
                 <button
                     className={theme === 'dark' ? 'dark' : 'light'}
-                    onClick={toggleDarkMode}
+                    onClick={toggleTheme}
                     aria-label="Change le theme en dark ou light"
                 ></button>
             </nav>
