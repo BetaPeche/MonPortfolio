@@ -45,12 +45,40 @@ body {
         transition: color 300ms;
         color: $black;
     }
+    .projects {
+        :nth-child(1) {
+            background-color: #89d9ca;
+        }
+        :nth-child(2) {
+            background-color: #f2e6d8;
+        }
+        :nth-child(3) {
+            background-color: #feeaa1;
+        }
+        :nth-child(4) {
+            background-color: #faae6b;
+        }
+    }
 }
 body.dark {
     background-color: $background-dark;
     color: $white;
     a {
         color: $white;
+    }
+    .projects {
+        :nth-child(1) {
+            background-color: #7fc7bf;
+        }
+        :nth-child(2) {
+            background-color: #ded3c9;
+        }
+        :nth-child(3) {
+            background-color: #e9d798;
+        }
+        :nth-child(4) {
+            background-color: #e5a167;
+        }
     }
     footer {
         background-color: $background-footer-dark;
