@@ -26,6 +26,13 @@ const Home = () => {
                 ))}
             </section>
             <h2>Projets</h2>
+            <section className="projects">
+                <div className="test"></div>
+                <div className="test"></div>
+                <div className="test"></div>
+                <div className="test"></div>
+            </section>
+            <h2>Qui suis je ?</h2>
         </main>
     )
 }
