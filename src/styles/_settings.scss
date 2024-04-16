@@ -53,16 +53,16 @@ body {
         color: $black;
     }
     .projects {
-        div:nth-child(1) {
+        a:nth-child(1) {
             background-color: #89d9ca;
         }
-        div:nth-child(2) {
+        a:nth-child(2) {
             background-color: #f2e6d8;
         }
-        div:nth-child(3) {
+        a:nth-child(3) {
             background-color: #feeaa1;
         }
-        div:nth-child(4) {
+        a:nth-child(4) {
             background-color: #faae6b;
         }
     }
@@ -74,16 +74,16 @@ body.dark {
         color: $white;
     }
     .projects {
-        div:nth-child(1) {
+        a:nth-child(1) {
             background-color: #7fc7bf;
         }
-        div:nth-child(2) {
+        a:nth-child(2) {
             background-color: #ded3c9;
         }
-        div:nth-child(3) {
+        a:nth-child(3) {
             background-color: #e9d798;
         }
-        div:nth-child(4) {
+        a:nth-child(4) {
             background-color: #e5a167;
         }
     }

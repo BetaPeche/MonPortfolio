@@ -1,6 +1,7 @@
 import Banner from '../components/Banner'
 import DataSkills from '../assets/data/dataSkills.json'
 import useThemeStore from '../themeStore'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     const { theme } = useThemeStore()
@@ -27,26 +28,26 @@ const Home = () => {
             </section>
             <h2>Projets</h2>
             <section className="projects">
-                <div className="test">
+                <Link to="/" className="test">
                     <h3>Kasa</h3>
                     <p>UX • UI Design</p>
                     <img src="./img/mac.png" alt="" />
-                </div>
-                <div className="test">
+                </Link>
+                <Link to="/" className="test">
                     <h3>Kasa</h3>
                     <p>UX • UI Design</p>
                     <img src="./img/mac.png" alt="" />
-                </div>
-                <div className="test">
+                </Link>
+                <Link to="/" className="test">
                     <h3>Kasa</h3>
                     <p>UX • UI Design</p>
                     <img src="./img/mac.png" alt="" />
-                </div>
-                <div className="test">
+                </Link>
+                <Link to="/" className="test">
                     <h3>Kasa</h3>
                     <p>UX • UI Design</p>
                     <img src="./img/mac.png" alt="" />
-                </div>
+                </Link>
             </section>
             <h2>Qui suis-je ?</h2>
         </main>
