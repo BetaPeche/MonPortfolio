@@ -56,10 +56,10 @@ header {
                 cursor: pointer;
             }
             &.light {
-                background-image: url('../../../public/img/toggleLight.webp');
+                background-image: url('/img/toggleLight.webp');
             }
             &.dark {
-                background-image: url('../../../public/img/toggleNight.webp');
+                background-image: url('/img/toggleNight.webp');
             }
         }
     }
