@@ -31,16 +31,6 @@ const Header = () => {
                             Home
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink
-                            to="/about"
-                            className={(nav) =>
-                                nav.isActive ? 'active-link' : ''
-                            }
-                        >
-                            About
-                        </NavLink>
-                    </li>
                 </ul>
                 <button
                     className={theme === 'dark' ? 'dark' : 'light'}
