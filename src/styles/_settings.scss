@@ -9,6 +9,9 @@ $white: white;
 $background-light: #fafbfc;
 $background-dark: #252b43;
 
+$background-footer-light: #252b43;
+$background-footer-dark: #1e1d26;
+
 @mixin verticalCenter {
     display: flex;
     justify-content: center;
@@ -49,6 +52,9 @@ body.dark {
     a {
         color: $white;
     }
+    footer {
+        background-color: $background-footer-dark;
+    }
 }
 
 #root {
@@ -69,6 +75,7 @@ main {
 
 footer {
     color: $white;
+    background-color: $background-footer-light;
 }
 
 li {
