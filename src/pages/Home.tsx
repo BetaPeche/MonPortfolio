@@ -32,7 +32,7 @@ const Home = () => {
                 <div className="test"></div>
                 <div className="test"></div>
             </section>
-            <h2>Qui suis je ?</h2>
+            <h2>Qui suis-je ?</h2>
         </main>
     )
 }
