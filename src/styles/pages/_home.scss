@@ -18,3 +18,17 @@
         }
     }
 }
+
+.projects {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    .test {
+        height: 500px;
+        width: 100%;
+        border-radius: 32px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+}
