@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Kasa",
+		"keywords": "HTML • SASS • React",
+		"description": "John Doe",
+		"image": "./img/mac.png",
+		"banner": "https://www.w3schools.com/w3images/avatar2.png"
+	},
+	{
+		"name": "Jane",
+		"keywords": "Jane, Doe, Jane Doe, Jane Doe 123",
+		"description": "Jane Doe",
+		"image": "https://www.w3schools.com/w3images/avatar2.png",
+		"banner": "https://www.w3schools.com/w3images/avatar2.png"
+	}
+]
