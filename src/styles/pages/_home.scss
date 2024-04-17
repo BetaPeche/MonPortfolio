@@ -33,6 +33,10 @@
             width: 100%;
             padding: 4%;
             background-color: transparent;
+            transition: scale 250ms;
+        }
+        &:hover img {
+            scale: 1.06;
         }
         p,
         h3 {
