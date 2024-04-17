@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const Card = ({ project }) => {
+const Card = () => {
     return (
         <Link to="/" className="test">
             <h3>Kasa</h3>
