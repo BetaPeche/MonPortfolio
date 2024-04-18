@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-content">
-                <p>Make with &#x1FA77; by me</p>
+                <p>Made with ❤️ by me</p>
                 <div className="footer-links">
                     <Link
                         to="https://github.com/BetaPeche"
