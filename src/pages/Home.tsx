@@ -1,29 +1,16 @@
 import Banner from '../components/Banner'
 import DataSkills from '../assets/data/dataSkills.json'
-import useThemeStore from '../themeStore'
 import { Link } from 'react-router-dom'
+import Skill from '../components/Skill'
 
 const Home = () => {
-    const { theme } = useThemeStore()
     return (
         <main>
             <Banner />
             <h2>Compétences</h2>
             <section className="skills">
                 {DataSkills.map((skill) => (
-                    <div className="skill" key={skill.name}>
-                        <div className="skill-image">
-                            <img
-                                src={
-                                    theme === 'dark' && skill.darkimage
-                                        ? skill.darkimage
-                                        : skill.image
-                                }
-                                alt={`logo ${skill.name}`}
-                            />
-                        </div>
-                        <p>{skill.name}</p>
-                    </div>
+                    <Skill data={skill} key={skill.name} />
                 ))}
             </section>
             <h2>Projets</h2>
