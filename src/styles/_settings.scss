@@ -43,7 +43,7 @@ $background-footer-dark: #1e1d26;
     box-sizing: border-box;
 }
 
-body {
+body.light {
     background: $background-light;
     color: $black;
     font-family: $font-1;
@@ -135,4 +135,17 @@ h3 {
     @include font-poppins(36px, 500);
     margin: 25px 0px 5px 25px;
     line-height: 36px;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        @include font-pacifico(64px, 400);
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        margin-bottom: 0px;
+    }
 }
