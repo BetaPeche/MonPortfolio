@@ -1,16 +1,24 @@
-import { create } from 'zustand'
+import { create, StateCreator } from 'zustand'
+import { persist } from 'zustand/middleware'
 
+type Theme = 'light' | 'dark'
 interface ThemeStore {
-    theme: 'light' | 'dark'
+    theme: Theme
     toggleTheme: () => void
 }
 
-const useThemeStore = create<ThemeStore>((set) => ({
-    theme: (localStorage.getItem('theme') as 'light' | 'dark') || 'light',
+const themeSlice: StateCreator<ThemeStore> = (set) => ({
+    theme: 'light',
     toggleTheme: () =>
         set((state) => ({
             theme: state.theme === 'light' ? 'dark' : 'light',
         })),
-}))
+})
+
+const useThemeStore = create<ThemeStore>()(
+    persist(themeSlice, {
+        name: 'theme-storage',
+    })
+)
 
 export default useThemeStore
