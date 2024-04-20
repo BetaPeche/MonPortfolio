@@ -20,3 +20,15 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 550px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 420px;
+    }
+}
