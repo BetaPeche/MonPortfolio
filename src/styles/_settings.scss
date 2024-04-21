@@ -43,48 +43,60 @@ $background-footer-dark: #1e1d26;
     box-sizing: border-box;
 }
 
-body.light {
-    background: $background-light;
-    color: $black;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: $font-1;
     transition: background-color 300ms, color 300ms;
-    a {
-        transition: color 300ms;
+    &.light {
+        background: $background-light;
         color: $black;
+        a {
+            transition: color 300ms;
+            color: $black;
+        }
+        .banner {
+            color: #262626;
+        }
+        .projects {
+            a:nth-child(1) {
+                background-color: #89d9ca;
+            }
+            a:nth-child(2) {
+                background-color: #f2e6d8;
+            }
+            a:nth-child(3) {
+                background-color: #feeaa1;
+            }
+            a:nth-child(4) {
+                background-color: #faae6b;
+            }
+        }
+        footer {
+            background-color: $background-footer-light;
+        }
     }
-    .projects {
-        a:nth-child(1) {
-            background-color: #89d9ca;
-        }
-        a:nth-child(2) {
-            background-color: #f2e6d8;
-        }
-        a:nth-child(3) {
-            background-color: #feeaa1;
-        }
-        a:nth-child(4) {
-            background-color: #faae6b;
-        }
-    }
-}
-body.dark {
-    background-color: $background-dark;
-    color: $white;
-    a {
+    &.dark {
+        background-color: $background-dark;
         color: $white;
-    }
-    .projects {
-        a:nth-child(1) {
-            background-color: #7fc7bf;
+        a {
+            color: $white;
         }
-        a:nth-child(2) {
-            background-color: #ded3c9;
-        }
-        a:nth-child(3) {
-            background-color: #e9d798;
-        }
-        a:nth-child(4) {
-            background-color: #e5a167;
+        .projects {
+            a:nth-child(1) {
+                background-color: #7fc7bf;
+            }
+            a:nth-child(2) {
+                background-color: #ded3c9;
+            }
+            a:nth-child(3) {
+                background-color: #e9d798;
+            }
+            a:nth-child(4) {
+                background-color: #e5a167;
+            }
         }
     }
     footer {
@@ -110,7 +122,6 @@ main {
 
 footer {
     color: $white;
-    background-color: $background-footer-light;
 }
 
 li {
@@ -129,6 +140,7 @@ h1 {
 h2 {
     @include font-pacifico(64px, 400);
     margin: 70px 0px 60px 0px;
+    text-align: center;
 }
 
 h3 {
@@ -141,11 +153,5 @@ h3 {
     h1 {
         @include font-pacifico(64px, 400);
         margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        margin-bottom: 0px;
     }
 }
