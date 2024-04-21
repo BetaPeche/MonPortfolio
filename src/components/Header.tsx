@@ -20,14 +20,7 @@ const Header = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink
-                            to="/about"
-                            className={(nav) =>
-                                nav.isActive ? 'active-link' : ''
-                            }
-                        >
-                            About
-                        </NavLink>
+                        <a href="#projects">Projets</a>
                     </li>
                 </ul>
                 <button
