@@ -15,7 +15,7 @@ const Banner = () => {
             />
             <div className="banner-content">
                 <h1>Bonjour !</h1>
-                <p>Test</p>
+                <p>Je suis Loïc Pellegrino développeur front-end</p>
             </div>
         </div>
     )
