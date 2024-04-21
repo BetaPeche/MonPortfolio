@@ -4,13 +4,31 @@
 		"keywords": "HTML • SASS • React",
 		"description": "John Doe",
 		"image": "./img/mac.png",
-		"banner": "https://www.w3schools.com/w3images/avatar2.png"
+		"banner": "https://www.w3schools.com/w3images/avatar2.png",
+		"link": "https://www.w3schools.com/w3images/avatar2.png"
 	},
 	{
-		"name": "Jane",
-		"keywords": "Jane, Doe, Jane Doe, Jane Doe 123",
+		"name": "ArgentBank",
+		"keywords": "React • Redux Toolkit",
 		"description": "Jane Doe",
-		"image": "https://www.w3schools.com/w3images/avatar2.png",
-		"banner": "https://www.w3schools.com/w3images/avatar2.png"
+		"image": "./img/argentbank.webp",
+		"banner": "https://www.w3schools.com/w3images/avatar2.png",
+		"link": "https://www.w3schools.com/w3images/avatar2.png"
+	},
+	{
+		"name": "Nina Carducci",
+		"keywords": "Performance • SEO • Accessibilité ",
+		"description": "Jane Doe",
+		"image": "./img/mac.png",
+		"banner": "https://www.w3schools.com/w3images/avatar2.png",
+		"link": "https://www.w3schools.com/w3images/avatar2.png"
+	},
+	{
+		"name": "Portfolio",
+		"keywords": "Design • Figma • HTML • SASS • React • Zustand",
+		"description": "Jane Doe",
+		"image": "./img/mac.png",
+		"banner": "https://www.w3schools.com/w3images/avatar2.png",
+		"link": "https://www.w3schools.com/w3images/avatar2.png"
 	}
 ]
