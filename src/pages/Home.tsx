@@ -1,7 +1,8 @@
 import Banner from '../components/Banner'
-import DataSkills from '../assets/data/dataSkills.json'
-import { Link } from 'react-router-dom'
+import dataSkills from '../assets/data/dataSkills.json'
+import dataProjects from '../assets/data/dataProjects.json'
 import Skill from '../components/Skill'
+import Project from '../components/Project'
 
 const Home = () => {
     return (
@@ -9,32 +10,15 @@ const Home = () => {
             <Banner />
             <h2>Compétences</h2>
             <section className="skills">
-                {DataSkills.map((skill) => (
+                {dataSkills.map((skill) => (
                     <Skill data={skill} key={skill.name} />
                 ))}
             </section>
-            <h2>Projets</h2>
+            <h2 id="projects">Projets</h2>
             <section className="projects">
-                <Link to="/" className="test">
-                    <h3>Kasa</h3>
-                    <p>UX • UI Design</p>
-                    <img src="./img/mac.png" alt="" />
-                </Link>
-                <Link to="/" className="test">
-                    <h3>Kasa</h3>
-                    <p>UX • UI Design</p>
-                    <img src="./img/mac.png" alt="" />
-                </Link>
-                <Link to="/" className="test">
-                    <h3>Kasa</h3>
-                    <p>UX • UI Design</p>
-                    <img src="./img/mac.png" alt="" />
-                </Link>
-                <Link to="/" className="test">
-                    <h3>Kasa</h3>
-                    <p>UX • UI Design</p>
-                    <img src="./img/mac.png" alt="" />
-                </Link>
+                {dataProjects.map((project) => (
+                    <Project data={project} key={project.name} />
+                ))}
             </section>
             <h2>Qui suis-je ?</h2>
         </main>
