@@ -15,8 +15,8 @@
         top: 5%;
         left: 5%;
         p {
-            @include font-work-sans(20px, 400);
-            margin-bottom: 40px;
+            @include font-work-sans(40px, 600);
+            margin: 0px 20px 40px 0px;
         }
     }
 }
