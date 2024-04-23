@@ -1,11 +1,22 @@
 import { Link } from 'react-router-dom'
 
-const Card = () => {
+type CardProps = {
+    data: {
+        name: string
+        keywords: string
+        description: string
+        image: string
+        banner: string
+        link: string
+    }
+}
+
+const Card: React.FC<CardProps> = ({ data }) => {
     return (
-        <Link to="/" className="test">
-            <h3>Kasa</h3>
-            <p>UX • UI Design</p>
-            <img src="./img/mac.png" alt="" />
+        <Link to={`/${data.name.replace(' ', '-')}`} className="card">
+            <h3>{data.name}</h3>
+            <p>{data.keywords}</p>
+            <img src={data.image} alt={`Image du site ${data.name}`} />
         </Link>
     )
 }
