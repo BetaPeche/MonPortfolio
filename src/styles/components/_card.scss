@@ -1,0 +1,22 @@
+.card {
+    width: 100%;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    img {
+        width: 100%;
+        padding: 4%;
+        background-color: transparent;
+        transition: scale 250ms;
+    }
+    &:hover img {
+        scale: 1.06;
+    }
+    p,
+    h3 {
+        color: #262626;
+    }
+    p {
+        @include font-poppins(20px, 500);
+        margin-left: 25px;
+    }
+}
