@@ -84,6 +84,9 @@ body {
         a {
             color: $white;
         }
+        .banner {
+            color: #d8e9f9;
+        }
         .projects {
             a:nth-child(1) {
                 background-color: #7fc7bf;
@@ -133,8 +136,8 @@ a {
 }
 
 h1 {
-    @include font-pacifico(128px, 400);
-    margin-bottom: 20px;
+    @include font-pacifico(150px, 400);
+    margin-bottom: 25px;
 }
 
 h2 {
@@ -149,9 +152,16 @@ h3 {
     line-height: 36px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     h1 {
         @include font-pacifico(64px, 400);
         margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        @include font-pacifico(100px, 400);
+        margin-bottom: 20px;
     }
 }
