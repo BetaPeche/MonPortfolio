@@ -2,7 +2,7 @@ import Banner from '../components/Banner'
 import dataSkills from '../assets/data/dataSkills.json'
 import dataProjects from '../assets/data/dataProjects.json'
 import Skill from '../components/Skill'
-import Project from '../components/Project'
+import Card from '../components/Card'
 
 const Home = () => {
     return (
@@ -17,12 +17,12 @@ const Home = () => {
             <h2 id="projects">Projets</h2>
             <section className="projects">
                 {dataProjects.map((project) => (
-                    <Project data={project} key={project.name} />
+                    <Card data={project} key={project.name} />
                 ))}
             </section>
-            <h2>Qui suis-je ?</h2>
+            <h2 id="about-me">Qui suis-je ?</h2>
             <section className="about-me">
-                <img src="./img/moua.png" alt="" />
+                <img src="./img/loic.webp" alt="" />
                 <p>
                     Bonjour, je suis un développeur web passionné basé dans un
                     charmant village de l'Aveyron. À 33 ans, père de deux
@@ -41,6 +41,10 @@ const Home = () => {
                     <br />
                     <br /> Merci de prendre le temps de découvrir mon parcours
                     et mes projets !
+                    <br />
+                    <br />« JE NE PERDS JAMAIS, SOIT JE GAGNE, SOIT J’APPRENDS.
+                    » <br />
+                    NELSON MANDELA
                 </p>
             </section>
         </main>
