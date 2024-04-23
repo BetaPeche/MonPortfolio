@@ -21,14 +21,28 @@
     }
 }
 
-@media (max-width: 1024px) {
+strong {
+    @include font-pacifico(50px, 400);
+    color: #339281;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .banner {
         height: 550px;
+    }
+    strong {
+        @include font-pacifico(32px, 400);
     }
 }
 
 @media (max-width: 768px) {
     .banner {
-        height: 420px;
+        height: 520px;
+        .banner-content {
+            p {
+                @include font-work-sans(30px, 600);
+            }
+        }
     }
 }
