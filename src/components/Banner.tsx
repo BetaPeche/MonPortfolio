@@ -14,8 +14,11 @@ const Banner = () => {
                 alt=""
             />
             <div className="banner-content">
-                <h1>Bonjour !</h1>
-                <p>Je suis Loïc Pellegrino développeur front-end</p>
+                <h1>Bonjour !!!</h1>
+                <p>
+                    Je suis <strong>Loïc Pellegrino</strong> développeur web
+                    <strong> front-end.</strong>
+                </p>
             </div>
         </div>
     )
