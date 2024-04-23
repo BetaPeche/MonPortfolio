@@ -1,4 +1,4 @@
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import useThemeStore from '../themeStore'
 
 const Header = () => {
@@ -10,17 +10,10 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink
-                            to="/"
-                            className={(nav) =>
-                                nav.isActive ? 'active-link' : ''
-                            }
-                        >
-                            Home
-                        </NavLink>
+                        <a href="#projects">Projets</a>
                     </li>
                     <li>
-                        <a href="#projects">Projets</a>
+                        <a href="#about-me">À propos</a>
                     </li>
                 </ul>
                 <button
