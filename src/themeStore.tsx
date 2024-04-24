@@ -2,7 +2,7 @@ import { create, StateCreator } from 'zustand'
 import { persist } from 'zustand/middleware'
 
 type Theme = 'light' | 'dark'
-interface ThemeStore {
+type ThemeStore = {
     theme: Theme
     toggleTheme: () => void
 }
