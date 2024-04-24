@@ -136,7 +136,7 @@ a {
 }
 
 h1 {
-    @include font-pacifico(150px, 400);
+    @include font-pacifico(clamp(64px, 10vw, 150px), 400);
     margin-bottom: 25px;
 }
 
@@ -150,18 +150,4 @@ h3 {
     @include font-poppins(36px, 500);
     margin: 25px 0px 5px 25px;
     line-height: 36px;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        @include font-pacifico(64px, 400);
-        margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    h1 {
-        @include font-pacifico(100px, 400);
-        margin-bottom: 20px;
-    }
 }
