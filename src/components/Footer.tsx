@@ -5,6 +5,7 @@ const Footer = () => {
         <footer>
             <div className="footer-content">
                 <p>Made with ❤️ by me</p>
+                <p>Contact: test@test.com</p>
                 <div className="footer-links">
                     <Link
                         to="https://github.com/BetaPeche"
