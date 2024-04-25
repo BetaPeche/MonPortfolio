@@ -47,14 +47,17 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+#root {
     font-family: $font-1;
-    transition: background-color 300ms, color 300ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
     &.light {
         background: $background-light;
         color: $black;
         a {
-            transition: color 300ms;
             color: $black;
         }
         .banner {
@@ -107,20 +110,13 @@ body {
     }
 }
 
-#root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-}
-
 main {
     max-width: 1320px;
     width: calc(100% - 40px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 footer {
