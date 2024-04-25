@@ -12,14 +12,14 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <img src="./img/githubdark.webp" alt="logo github" />
+                        <img src="/img/githubdark.webp" alt="logo github" />
                     </Link>
                     <Link
                         to="https://www.linkedin.com/in/lo%C3%AFc-pellegrino-927295295/"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <img src="./img/linkedin.webp" alt="logo linkedin" />
+                        <img src="/img/linkedin.webp" alt="logo linkedin" />
                     </Link>
                 </div>
             </div>
