@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { useEffect } from 'react'
 import useThemeStore from './themeStore'
+import Projet from './pages/Projet'
 
 function App() {
     const { theme } = useThemeStore()
@@ -21,8 +22,8 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/projet/:id" element={<Projet />} />
                 {/* <Route path="*" element={<Home />} /> */}
-                {/* <Route path="/about" element={<About />} /> */}
             </Routes>
             <Footer />
         </BrowserRouter>
