@@ -3,14 +3,14 @@ import Home from './pages/Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import useThemeStore from './themeStore'
-import Projet from './pages/Projet'
+import Project from './pages/Project'
 
 function App() {
     const { theme } = useThemeStore()
     const root = document.getElementById('root')
 
     if (!root) {
-        return null
+        return
     }
 
     if (theme === 'dark') {
@@ -24,7 +24,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/projet/:id" element={<Projet />} />
+                <Route path="/projet/:id" element={<Project />} />
                 <Route path="*" element={<Home />} />
             </Routes>
             <Footer />
