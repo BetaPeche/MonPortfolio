@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import dataProjects from '../assets/data/dataProjects.json'
 
-const Projet = () => {
+const Project = () => {
     const { id } = useParams<{ id?: string }>()
     const [project, setProject] = useState<{
         name: string
@@ -47,4 +47,4 @@ const Projet = () => {
     )
 }
 
-export default Projet
+export default Project
