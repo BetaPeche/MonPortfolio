@@ -2,7 +2,15 @@
     width: 100%;
     border-radius: 32px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative;
+    .spacer {
+        display: block;
+        padding-top: 63.3%;
+        width: 100%;
+    }
     img {
+        position: absolute;
+        bottom: 0;
         width: 100%;
         padding: 4%;
         background-color: transparent;
