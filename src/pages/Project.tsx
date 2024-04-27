@@ -16,7 +16,6 @@ const Project = () => {
 
     useEffect(() => {
         if (!id) {
-            navigate('/')
             return
         }
 
