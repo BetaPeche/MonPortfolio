@@ -5,7 +5,8 @@
 		"description": "John Doe",
 		"image": "./img/mac.png",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"link": "https://www.w3schools.com/w3images/avatar2.png"
+		"link": "https://www.w3schools.com/w3images/avatar2.png",
+		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
 	},
 	{
 		"name": "ArgentBank",
@@ -13,7 +14,8 @@
 		"description": "Jane Doe",
 		"image": "./img/argentbank.webp",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"link": "https://www.w3schools.com/w3images/avatar2.png"
+		"link": "https://www.w3schools.com/w3images/avatar2.png",
+		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
 	},
 	{
 		"name": "Nina Carducci",
@@ -21,7 +23,8 @@
 		"description": "Jane Doe",
 		"image": "./img/mac.png",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"link": "https://www.w3schools.com/w3images/avatar2.png"
+		"link": "https://www.w3schools.com/w3images/avatar2.png",
+		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
 	},
 	{
 		"name": "Portfolio",
@@ -29,6 +32,7 @@
 		"description": "Jane Doe",
 		"image": "./img/mac.png",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"link": "https://www.w3schools.com/w3images/avatar2.png"
+		"link": "https://www.w3schools.com/w3images/avatar2.png",
+		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
 	}
 ]
