@@ -2,29 +2,33 @@
     width: 100%;
     border-radius: 32px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    position: relative;
-    .spacer {
-        display: block;
-        padding-top: 63.3%;
+    display: flex;
+    flex-direction: column;
+    .card-image {
+        margin-top: auto;
         width: 100%;
+        padding-top: 59%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
     }
-    img {
+    .card-image img {
         position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 4%;
-        background-color: transparent;
-        transition: scale 250ms;
+        top: 5px;
+        width: 90%;
+        height: 90%;
+        transition: transform 250ms;
     }
+
     &:hover img {
-        scale: 1.06;
+        transform: scale(1.06);
     }
-    p,
-    h3 {
-        color: #262626;
-    }
+
     p {
-        @include font-poppins(20px, 500);
+        @include font-work-sans(22px, 500);
         margin-left: 25px;
+        margin-bottom: 20px;
+        color: #262626;
     }
 }
