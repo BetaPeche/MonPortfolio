@@ -16,9 +16,9 @@ const Card: React.FC<CardProps> = ({ data }) => {
         <Link to={`/${data.name.replace(' ', '-')}`} className="card">
             <h3>{data.name}</h3>
             <p>{data.keywords}</p>
-
-            <img src={data.image} alt={`Image du site ${data.name}`} />
-            <span className="spacer"></span>
+            <div className="card-image">
+                <img src={data.image} alt={`Image du site ${data.name}`} />
+            </div>
         </Link>
     )
 }
