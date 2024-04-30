@@ -6,6 +6,8 @@ $font-2: 'Pacifico', cursive;
 $black: black;
 $white: white;
 
+$dark-font: #262626;
+
 $background-light: #fafbfc;
 $background-dark: #252b43;
 
@@ -54,7 +56,7 @@ html {
             color: $black;
         }
         .banner {
-            color: #262626;
+            color: $dark-font;
         }
         .projects {
             a:nth-child(1) {
@@ -138,5 +140,5 @@ h2 {
 h3 {
     @include font-pacifico(38px, 500);
     margin: 10px 0px 0px 25px;
-    color: #262626;
+    color: $dark-font;
 }
