@@ -12,10 +12,14 @@ footer {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
-        p {
+        p,
+        a {
             grid-column: 2;
             justify-self: center;
             text-align: center;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .footer-links {
             grid-column: 3;
