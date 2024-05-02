@@ -1,0 +1,47 @@
+.presentation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    white-space: pre-line;
+    img {
+        width: 100%;
+        align-self: center;
+    }
+    .presentation-text {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        h2 {
+            margin: 0;
+        }
+        p {
+            font-size: 20px;
+        }
+        .presentation-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            a {
+                font-size: 20px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .presentation {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        img {
+            width: 80%;
+            justify-self: center;
+        }
+    }
+}
