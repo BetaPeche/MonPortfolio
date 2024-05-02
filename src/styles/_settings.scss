@@ -50,7 +50,7 @@ html {
     width: 100%;
     min-height: 100vh;
     &.light {
-        background: $background-light;
+        background-color: $background-light;
         color: $black;
         a {
             color: $black;
@@ -74,6 +74,9 @@ html {
         }
         footer {
             background-color: $background-footer-light;
+            a {
+                color: $white;
+            }
         }
     }
     &.dark {
