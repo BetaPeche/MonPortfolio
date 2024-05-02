@@ -2,37 +2,36 @@
 	{
 		"name": "Kasa",
 		"keywords": "HTML • SASS • React",
-		"description": "John Doe",
+		"description": "Projet de refonte Front-end pour Kasa. J'ai eu l'opportunité de participer à la refonte complète du site de l'entreprise. Voici un aperçu des défis rencontrés et des compétences acquises dans ce projet :\n\n Technologies utilisées : \n\n-React et React Router : J'ai utilisé React et React Router pour développer une expérience utilisateur moderne et réactive. Cela m'a permis de mettre en place la navigation entre les différentes pages de l'application de manière efficace et intuitive. \n\n-Implémentation des maquettes Figma : En suivant les maquettes fournies par le designer, j'ai travaillé sur la logique de présentation des données et des composants React, assurant ainsi une correspondance étroite entre le design et le développement. \n\nDonnées simulées et contraintes fonctionnelles : \n\n-J'ai intégré des données simulées extraites d'un fichier JSON pour construire le front-end de l'application en l'absence d'un back-end opérationnel. \n\n-J'ai implémenté des fonctionnalités spécifiques, telles que la gestion du défilement des photos dans la galerie et le comportement des éléments Collapse, en respectant les contraintes fonctionnelles définies par le designer.",
 		"image": "./img/mac.png",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"link": "https://www.w3schools.com/w3images/avatar2.png",
-		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
+		"link": "https://kasa-sable-six.vercel.app/",
+		"github_link": "https://github.com/BetaPeche/Kasa"
 	},
 	{
 		"name": "ArgentBank",
 		"keywords": "React • Redux Toolkit",
-		"description": "Jane Doe",
+		"description": "Projet Front-end chez Argent Bank. Au cours de ce projet, j'ai pu approfondir mes compétences en développement front-end et travailler sur une application bancaire complète. Voici un résumé de mon travail et des compétences acquises :\n\n Technologies utilisées :\n\n- React et Redux : J'ai développé une interface utilisateur dynamique avec React, permettant de créer un tableau de bord réactif et convivial pour les utilisateurs. L'utilisation de Redux m'a permis de gérer efficacement l'état global de l'application. \n\n-Intégration avec l'API : J'ai mis en place des appels à l'API REST pour connecter le front-end au back-end de l'application, assurant une communication efficace et sécurisée entre les deux. \n\n-Documentation avec Swagger : J'ai utilisé Swagger pour définir les points d'accès de l'API et modéliser les interactions avec les données. \n\nBonnes pratiques de développement : \n\n-J'ai veillé à suivre les bonnes pratiques de Green Code en optimisant les images et en créant des composants réutilisables, garantissant ainsi un code propre et optimisé.",
 		"image": "./img/argentbank.webp",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"link": "https://www.w3schools.com/w3images/avatar2.png",
-		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
+		"github_link": "https://github.com/BetaPeche/ArgentBank"
 	},
 	{
 		"name": "Nina Carducci",
 		"keywords": "Performance • SEO • Accessibilité ",
-		"description": "Jane Doe",
-		"image": "./img/mac.png",
+		"description": "Projet d'Optimisation SEO pour Nina Carducci :\n\n Objectif : \n\nAméliorer le référencement du site de Nina Carducci en optimisant sa performance et son accessibilité. \n\nActions : \n\n-Identifié les problèmes de chargement et de référencement. \n\n-Proposé des recommandations et appliqué des améliorations pour optimiser la vitesse de chargement et la structure du code. \n\nMises en Place : \n\n-Utilisé Schema.org pour le référencement local et ajouté des metas pour les réseaux sociaux. \n\n-Modifié le code pour garantir l'accessibilité du site à tous les utilisateurs. \n\nRésultats : Amélioration des performances et de l'accessibilité du site pour un meilleur référencement sur les moteurs de recherche. \n\nCompétences Acquises : \n\n-Maîtrise des outils d'audit comme Lighthouse et Wave. \n\n-Expertise en optimisation SEO et en amélioration des performances des sites web. Communication efficace avec le client pour comprendre ses besoins et fournir des solutions adaptées.",
+		"image": "./img/Nina.webp",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"link": "https://www.w3schools.com/w3images/avatar2.png",
-		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
+		"link": "https://betapeche.github.io/NinaCarducci/",
+		"github_link": "https://github.com/BetaPeche/NinaCarducci"
 	},
 	{
 		"name": "Portfolio",
 		"keywords": "Design • Figma • HTML • SASS • React • Zustand",
 		"description": "Jane Doe",
-		"image": "./img/mac.png",
+		"image": "./img/Portfolio.webp",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
 		"link": "https://www.w3schools.com/w3images/avatar2.png",
-		"github-link": "https://www.w3schools.com/w3images/avatar2.png"
+		"github_link": "https://www.w3schools.com/w3images/avatar2.png"
 	}
 ]
