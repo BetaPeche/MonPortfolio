@@ -7,7 +7,8 @@ type CardProps = {
         description: string
         image: string
         banner: string
-        link: string
+        link?: string
+        github_link?: string
     }
 }
 
