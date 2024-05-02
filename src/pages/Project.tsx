@@ -10,7 +10,8 @@ const Project = () => {
         description: string
         image: string
         banner: string
-        link: string
+        link?: string
+        github_link?: string
     } | null>(null)
     const navigate = useNavigate()
 
@@ -42,6 +43,34 @@ const Project = () => {
     return (
         <main>
             <h1>{project.name}</h1>
+            <section className="presentation">
+                <img src={project.image} alt="" />
+                <div className="presentation-text">
+                    <h2>Présentation:</h2>
+                    <p>{project.description}</p>
+                    <div className="presentation-links">
+                        {project.github_link && (
+                            <a
+                                href={project.github_link}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <i className="fa-brands fa-github"></i> Github
+                            </a>
+                        )}
+                        {project.link && (
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <i className="fa-solid fa-paperclip"></i> Lien
+                                vers le projet
+                            </a>
+                        )}
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
