@@ -42,7 +42,6 @@ const Project = () => {
 
     return (
         <main>
-            <h1>{project.name}</h1>
             <section className="presentation">
                 <img src={project.image} alt="" />
                 <div className="presentation-text">
