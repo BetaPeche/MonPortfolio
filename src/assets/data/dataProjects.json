@@ -3,7 +3,7 @@
 		"name": "Kasa",
 		"keywords": "HTML • SASS • React",
 		"description": "Projet de refonte Front-end pour Kasa. J'ai eu l'opportunité de participer à la refonte complète du site de l'entreprise. Voici un aperçu des défis rencontrés et des compétences acquises dans ce projet :\n\n Technologies utilisées : \n\n-React et React Router : J'ai utilisé React et React Router pour développer une expérience utilisateur moderne et réactive. Cela m'a permis de mettre en place la navigation entre les différentes pages de l'application de manière efficace et intuitive. \n\n-Implémentation des maquettes Figma : En suivant les maquettes fournies par le designer, j'ai travaillé sur la logique de présentation des données et des composants React, assurant ainsi une correspondance étroite entre le design et le développement. \n\nDonnées simulées et contraintes fonctionnelles : \n\n-J'ai intégré des données simulées extraites d'un fichier JSON pour construire le front-end de l'application en l'absence d'un back-end opérationnel. \n\n-J'ai implémenté des fonctionnalités spécifiques, telles que la gestion du défilement des photos dans la galerie et le comportement des éléments Collapse, en respectant les contraintes fonctionnelles définies par le designer.",
-		"image": "./img/mac.png",
+		"image": "./img/kasa.webp",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
 		"link": "https://kasa-sable-six.vercel.app/",
 		"github_link": "https://github.com/BetaPeche/Kasa"
