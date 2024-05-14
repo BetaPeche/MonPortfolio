@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import dataProjects from '../assets/data/dataProjects.json'
+import useThemeStore from '../themeStore'
 
 const Project = () => {
     const { id } = useParams<{ id?: string }>()
@@ -8,12 +9,14 @@ const Project = () => {
         name: string
         keywords: string
         description: string
-        image: string
+        image?: string
+        image_dark?: string
         banner: string
         link?: string
         github_link?: string
     } | null>(null)
     const navigate = useNavigate()
+    const { theme } = useThemeStore()
 
     useEffect(() => {
         if (!id) {
@@ -43,7 +46,14 @@ const Project = () => {
     return (
         <main>
             <section className="presentation">
-                <img src={project.image} alt="" />
+                <img
+                    src={
+                        theme === 'dark' && project.image_dark
+                            ? project.image_dark
+                            : project.image
+                    }
+                    alt=""
+                />
                 <div className="presentation-text">
                     <h2>Présentation:</h2>
                     <p>{project.description}</p>

@@ -29,7 +29,8 @@
 		"name": "Portfolio",
 		"keywords": "Design • Figma • HTML • SASS • React • Zustand",
 		"description": "Objectif :\n\nCréer mon portfolio de développeur pour présenter mes compétences et réalisations.\n\nActions :\n\n-Conception d'une maquette sur Figma pour planifier le design et la structure du site.\n-Intégration du design avec React, en utilisant Sass pour le style et Zustand pour la gestion de l'état global.\n\nMises en Place :\n\nDéveloppement d'une interface réactive et moderne pour présenter mes compétences et projets.\nUtilisation de Sass pour organiser et styliser efficacement les composants React.\nExpérimentation avec Zustand pour gérer l'état global de l'application de manière simple et efficace.\n\nRésultats :\n\nCréation d'un portfolio fonctionnel et esthétique, mettant en valeur mes compétences en développement web.",
-		"image": "./img/Portfolio.webp",
+		"image": "./img/portfolio-light.webp",
+		"image_dark": "./img/portfolio-dark.webp",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
 		"github_link": "https://github.com/BetaPeche/MonPortfolio"
 	}
