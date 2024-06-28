@@ -9,12 +9,13 @@
 		"github_link": "https://github.com/BetaPeche/Kasa"
 	},
 	{
-		"name": "ArgentBank",
-		"keywords": "React • Redux Toolkit",
-		"description": "Projet Front-end chez Argent Bank. Au cours de ce projet, j'ai pu approfondir mes compétences en développement front-end et travailler sur une application bancaire complète. Voici un résumé de mon travail et des compétences acquises :\n\n Technologies utilisées :\n\n- React et Redux : J'ai développé une interface utilisateur dynamique avec React, permettant de créer un tableau de bord réactif et convivial pour les utilisateurs. L'utilisation de Redux m'a permis de gérer efficacement l'état global de l'application. \n\n-Intégration avec l'API : J'ai mis en place des appels à l'API REST pour connecter le front-end au back-end de l'application, assurant une communication efficace et sécurisée entre les deux. \n\n-Documentation avec Swagger : J'ai utilisé Swagger pour définir les points d'accès de l'API et modéliser les interactions avec les données. \n\nBonnes pratiques de développement : \n\n-J'ai veillé à suivre les bonnes pratiques de Green Code en optimisant les images et en créant des composants réutilisables, garantissant ainsi un code propre et optimisé.",
-		"image": "./img/argentbank.webp",
+		"name": "Follw",
+		"keywords": "React • Zustand • Node • MongoDb • Express • SASS • API",
+		"description": "Projet fullstack Follw. Au cours de ce projet, j'ai pu approfondir mes compétences en développement front-end et back-end sur un projet réalisé de A à Z sur la stack MENR. Voici un résumé de mon travail et des compétences acquises :\n\n Technologies utilisées :\n\n- React et Zustand : J'ai développé une interface utilisateur dynamique avec React, permettant de créer un tableau de bord réactif et convivial pour les utilisateurs. L'utilisation de Zustand m'a permis de gérer efficacement l'état global de l'application. \n\n-J'ai mis en place une API REST avec NodeJS et Express, assurant une communication fluide entre le front-end et le back-end. \n\n-Stockage des données : J'ai utilisé MongoDB avec Mongoose pour la sauvegarde des données utilisateurs, garantissant une gestion efficace et sécurisée des informations. \n\n-Utilisation de librairies externes : J'ai intégré Rechart pour la visualisation des données sous forme de graphiques, et React-modal pour la gestion des modales.\n\n\n Le projet est disponible via le lien ci-dessous. Un compte de démonstration est à votre disposition pour vous connecter :\n\n- Email : demo@demo.fr\n- Mot de passe : demodemo",
+		"image": "./img/follw.webp",
 		"banner": "https://www.w3schools.com/w3images/avatar2.png",
-		"github_link": "https://github.com/BetaPeche/ArgentBank"
+		"link": "https://sport-app-eosin.vercel.app/",
+		"github_link": "https://github.com/BetaPeche/sport-app"
 	},
 	{
 		"name": "Nina Carducci",
