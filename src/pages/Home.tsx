@@ -3,26 +3,28 @@ import dataSkills from '../assets/data/dataSkills.json'
 import dataProjects from '../assets/data/dataProjects.json'
 import Skill from '../components/Skill'
 import Card from '../components/Card'
+import { useId } from 'react'
 
 const Home = () => {
+    const id = useId()
     return (
         <main>
             <Banner />
             <h2>Compétences</h2>
             <section className="skills">
-                {dataSkills.map((skill) => (
-                    <Skill data={skill} key={skill.name} />
+                {dataSkills.map((skill, index) => (
+                    <Skill data={skill} key={`${id}-${index}`} />
                 ))}
             </section>
             <h2 id="projects">Projets</h2>
             <section className="projects">
-                {dataProjects.map((project) => (
-                    <Card data={project} key={project.name} />
+                {dataProjects.map((project, index) => (
+                    <Card data={project} key={`${id}-${index}`} />
                 ))}
             </section>
             <h2 id="about-me">Qui suis-je ?</h2>
             <section className="about-me">
-                <img src="./img/loic.webp" alt="" />
+                <img src="./img/loic.webp" alt="Photo de profil de Loïc" />
                 <p>
                     Bonjour, je suis un développeur web passionné basé dans un
                     charmant village de l'Aveyron. À 33 ans, père de deux
